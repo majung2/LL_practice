@@ -1,0 +1,14 @@
+<h1>RESULT</h1>
+<h3>결과 페이지입니다.</h3>
+
+원문: {{ total }}
+<br><br>
+
+단어개수세기
+<br>
+{% for word, num in dic %}
+{{ word }} : {{ num }}<br>
+{% endfor %}
+
+<br>
+<a href="{% url 'home' %}">홈</a>
